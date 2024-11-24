@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 
 //pages
@@ -9,19 +9,6 @@ import UserManagement from "./pages/UserManagement";
 function App() {
   return (
     <Router>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/login">Login</Link>
-          </li>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/user-management">User Management</Link>
-          </li>
-        </ul>
-      </nav>
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/" element={<Home />} />
