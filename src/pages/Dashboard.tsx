@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import React from "react";
 
 function Home() {
@@ -5,6 +6,7 @@ function Home() {
     <div>
       <h2>Home Page</h2>
       <p>Welcome to the home page!</p>
+      <Button>button</Button>
     </div>
   );
 }
